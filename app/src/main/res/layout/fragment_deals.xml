@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DealsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        ////////////////////////////////////////////
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-31dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="Instructions:"
+                    android:textColor="#214EF3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="323dp"
+                    android:layout_height="182dp"
+                    android:text='1. Navigate below and choose a Deal \n \n2. Click "Click to reveal deal above" (blue button) to enable the deals link. The button in black with the lock will be unlocked_button and will turn green. Note when clicking the blue bottom you might encounter an ad from one of our sponsors. \n\n 3. Click the green button to navigate to the deal and start saving.'
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <ImageView
+                    android:id="@+id/imageview_logo_deal1"
+                    android:layout_width="275dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="32dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textview_description_deal1"
+                    android:layout_width="306dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deal1"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview_logo_deal1" />
+
+                <TextView
+                    android:id="@+id/textview_verified_deal1"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VERIFIED Promo Code Active"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_description_deal1" />
+
+                <Button
+                    android:id="@+id/button_reveal_deal1"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="Click to reveal deal above"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_lock" />
+
+                <LinearLayout
+                    android:id="@+id/fb_container_dealsfragment_ad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_reveal_deal1">
+
+                </LinearLayout>
+
+                ////////////////////////////////////////////
+
+
+                <ImageView
+                    android:id="@+id/imageview_logo_deal2"
+                    android:layout_width="275dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="144dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fb_container_dealsfragment_ad1"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textview_description_deal2"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deal2"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview_logo_deal2" />
+
+                <TextView
+                    android:id="@+id/textview_verified_deal2"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VERIFIED Promo Code Active"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_description_deal2" />
+
+                <Button
+                    android:id="@+id/button_reveal_deal2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="Click to reveal deal above"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_lock_2" />
+
+                <LinearLayout
+                    android:id="@+id/fb_container_dealsfragment_ad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_reveal_deal2">
+
+                </LinearLayout>
+
+                ////////////////////////////////////////////
+
+                ////////////////////////////////////////////
+
+
+                <ImageView
+                    android:id="@+id/imageview_logo_deal3"
+                    android:layout_width="275dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="144dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fb_container_dealsfragment_ad2"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textview_description_deal3"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deal3"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview_logo_deal3" />
+
+                <TextView
+                    android:id="@+id/textview_verified_deal3"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VERIFIED Promo Code Active"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_description_deal3" />
+
+
+                ////////////////////////////////////////////
+
+
+                ////////////////////////////////////////////
+
+
+                <Button
+                    android:id="@+id/button_reveal_deal3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:textColor="@android:color/white"
+                    android:text="Click to reveal deal above"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_lock_3" />
+
+                <LinearLayout
+                    android:id="@+id/fb_container_dealsfragment_ad3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_reveal_deal3" />
+
+                /////////////////////////////////////////////
+
+                <ImageView
+                    android:id="@+id/imageview_logo_deal4"
+                    android:layout_width="275dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="144dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fb_container_dealsfragment_ad3"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textview_description_deal4"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deal4"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview_logo_deal4" />
+
+                <TextView
+                    android:id="@+id/textview_verified_deal4"
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VERIFIED Promo Code Active"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_description_deal4" />
+
+
+                <Button
+                    android:id="@+id/button_reveal_deal4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="Click to reveal deal above"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_lock_4" />
+
+                <LinearLayout
+                    android:id="@+id/fb_container_dealsfragment_ad4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_reveal_deal4" />
+                ///////////////////////////////////
+
+                <ImageView
+                    android:id="@+id/imageview_logo_deal5"
+                    android:layout_width="275dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="144dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fb_container_dealsfragment_ad4"
+                    app:srcCompat="@drawable/logo" />
+
+
+                <TextView
+                    android:id="@+id/textview_description_deal5"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deal5"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview_logo_deal5" />
+
+                <TextView
+                    android:id="@+id/textview_verified_deal5"
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VERIFIED Promo Code Active"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_description_deal5" />
+
+                <Button
+                    android:id="@+id/button_reveal_deal5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+
+                    android:text="Click to reveal deal above"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_lock_5" />
+
+
+                ////////////////////////////
+
+                <LinearLayout
+                    android:id="@+id/fb_container_dealsfragment_ad5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_reveal_deal5" />
+
+                <ImageView
+                    android:id="@+id/imageview_logo_deal6"
+                    android:layout_width="275dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="144dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fb_container_dealsfragment_ad5"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textview_description_deal6"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deal6"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview_logo_deal6" />
+
+                <TextView
+                    android:id="@+id/textview_verified_deal6"
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VERIFIED Promo Code Active"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_description_deal6" />
+
+                <Button
+                    android:id="@+id/button_reveal_deal6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="Click to reveal deal above"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_lock_6" />
+
+                <LinearLayout
+                    android:id="@+id/fb_container_dealsfragment_ad6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_reveal_deal6" />
+
+                ////////////////////////////
+
+                <LinearLayout
+                    android:id="@+id/fb_container_dealsfragment_ad7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_reveal_deal7" />
+
+                <ImageView
+                    android:id="@+id/imageview_logo_deal7"
+                    android:layout_width="275dp"
+                    android:layout_height="82dp"
+                    android:layout_marginTop="144dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fb_container_dealsfragment_ad6"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textview_description_deal7"
+                    android:layout_width="357dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/deal6"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageview_logo_deal7" />
+
+                <TextView
+                    android:id="@+id/textview_verified_deal7"
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="VERIFIED Promo Code Active"
+                    android:textColor="@android:color/holo_green_light"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_description_deal7" />
+
+                <Button
+                    android:id="@+id/button_reveal_deal7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:text="Click to reveal deal above"
+                    android:textColor="@android:color/white"
+                    android:textColorLink="@android:color/background_light"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button_lock_7" />
+
+
+
+
+
+
+
+                ////////////////////////////
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="390dp"
+                    android:layout_height="222dp"
+                    android:layout_marginTop="184dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.476"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fb_container_dealsfragment_ad7" />
+
+                <ImageButton
+                    android:id="@+id/button_lock"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/locked_button"
+                    android:text="button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_verified_deal1" />
+
+                <ImageButton
+                    android:id="@+id/button_lock_2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/locked_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_verified_deal2" />
+
+
+                <ImageButton
+                    android:id="@+id/button_lock_3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/locked_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_verified_deal3" />
+
+                <ImageButton
+                    android:id="@+id/button_lock_4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/locked_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_verified_deal4" />
+
+                <ImageButton
+                    android:id="@+id/button_lock_5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/locked_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_verified_deal5" />
+
+                <ImageButton
+                    android:id="@+id/button_lock_6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/locked_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_verified_deal6" />
+
+
+
+                <ImageButton
+                    android:id="@+id/button_lock_7"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/locked_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textview_verified_deal7" />
+
+
+                ////////////////////////////////////////////
+
+
+                ////////////////////////////////////////////
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        ////////////////////////////////////////////
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

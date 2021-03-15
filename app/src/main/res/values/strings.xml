@@ -1,0 +1,43 @@
+<resources>
+    //Dynamic Resources changes per application
+    <string name="app_name">Subway Deals</string>
+    <string name="menu_home">Home</string>
+    <string name="sharable_app_link">Check out the Coupons Deals I found for Subway, up to 90% Savings! https://play.google.com/store/apps/details?id=com.subwaysandwichesdelivery.specialsdealscoupons</string>
+    <string name="contact_us_text_message">Subway Coupons Deals: Hi I need help or have feedback for the following…</string>
+    <string name="fbPlacementIdBannerAd1">838524106895852_909298059818456</string>
+    <string name="fbPlacementIdInterstitialAd1">838524106895852_893285841419678</string>
+    <string name="update_app_url">https://play.google.com/store/apps/details?id=com.subwaysandwichesdelivery.specialsdealscoupons</string>
+    <string name="email_message_body">Subway Coupons Deals: Hi I need help or have feedback for the following…</string>
+    <string name="email_message_subject">Subway Coupons Deals Support</string>
+    ////Deals Text
+    <string name="deal1">Online: Get One Free Footlong When You Buy Two</string>
+    <string name="deal2">IN STORE: Any 5.99 Any Footlong</string>
+    <string name="deal3">Online: $5 Footlong Sub</string>
+    <string name="deal4">Online: $2.99 Inch Sub</string>
+    <string name="deal5">Online: Free Cookie W/ Purchase</string>
+    <string name="deal6">Online: Weekly Specials</string>
+    <string name="deal7">More Coupons and Deals</string>
+    ////Deals IMG_16_9_APP_INSTALL
+    <string name="web_link_main_website_order_now">https://subway.com</string>
+    <string name="web_link_deal_1">https://www.subway.com/en-US/Promotions</string>
+    <string name="web_link_deal_2">https://www.retailmenot.com/offer/EI2YVJ6HZBBLTGJMZHXVUSJGG4/</string>
+    <string name="web_link_deal_3">https://www.retailmenot.com/offer/EI2YVJ6HZBBLTGJMZHXVUSJGG4/</string>
+    <string name="web_link_deal_4">https://www.retailmenot.com/view/subway.com</string>
+    <string name="web_link_deal_5">https://www.retailmenot.com/view/subway.com</string>
+    <string name="web_link_deal_6">https://www.retailmenot.com/view/subway.com</string>
+    <string name="web_link_deal_7">https://www.retailmenot.com/view/subway.com</string>
+
+
+
+    //Static Resources doesn't change
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Coupons Deals</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_update">Update App</string>
+    <string name="menu_gallery">Contact Us</string>
+    <string name="menu_slideshow">More Apps</string>
+    <string name="menu_share_app">Share Our App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

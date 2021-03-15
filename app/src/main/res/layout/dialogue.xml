@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:background="#FFFFFF"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="66dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Instructions: To use this coupon show it to the person at the check out counter while checking you out. Ensure the timer is still ticking in order for the coupon to be valid. "
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="21dp"
+            android:text="Close"
+            app:backgroundTint="@android:color/holo_green_dark" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

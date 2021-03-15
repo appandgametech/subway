@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_dealsFragment2"
+            app:destination="@id/dealsFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.ui.contactus.ContactUsFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_contactus" />
+
+    <fragment
+        android:id="@+id/nav_moreapps"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.WebViewFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/dealsFragment"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.DealsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_deals" >
+        <action
+            android:id="@+id/action_dealsFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_dealsFragment_to_timerFragment"
+            app:destination="@id/timerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_shareFragment"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.ui.ShareUsFragment.ShareUsFragment"
+        android:label="Share Us" />
+    <fragment
+        android:id="@+id/moreAppsFragment"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.MoreAppsFragment"
+        android:label="fragment_more_apps"
+        tools:layout="@layout/fragment_more_apps" />
+    <fragment
+        android:id="@+id/ratingFragment"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.RatingFragment"
+        android:label="Rating Us"
+        tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.subwaysandwichesdelivery.specialsdealscoupons.TimerFragment"
+        tools:layout="@layout/fragment_timer" />
+</navigation>
